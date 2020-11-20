@@ -13,4 +13,4 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'ls -Al /'
+    script: 'find / -type d'
