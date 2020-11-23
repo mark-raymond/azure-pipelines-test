@@ -19,6 +19,5 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      perl -e 'print "$^O"'
-      echo
+      perl -e '"print \"$^O\n\""'
     pwsh: true
