@@ -20,4 +20,5 @@ steps:
     targetType: 'inline'
     script: |
       perl -e 'print "$^O"'
+      echo
     pwsh: true
