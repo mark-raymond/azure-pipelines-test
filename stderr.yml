@@ -14,11 +14,6 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      $global:ErrorActionPreference = 'Stop'
-      Write-Host "Run one"
-      .\StdOutStdErr.exe
-      Write-Host "Run two"
-      .\StdOutStdErr.exe
-      Write-Host "Run three"
-      .\StdOutStdErr.exe
+      .\_init.ps1
+      TestStdErr
     pwsh: true
