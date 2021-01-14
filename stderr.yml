@@ -13,5 +13,7 @@ steps:
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
-    script: '.\StdOutStdErr.exe'
+    script: |
+      $global:ErrorActionPreference = 'Stop'
+      .\StdOutStdErr.exe
     pwsh: true
